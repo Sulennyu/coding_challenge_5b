@@ -44,10 +44,10 @@ switch (category) {
 
 }
 
-console.log(getCategoryDiscount("gear"))
-console.log(getCategoryDiscount("apparel"))
-console.log(getCategoryDiscount("snacks"))
-console.log(getCategoryDiscount("access"))
+console.log(getCategoryDiscount("gear"));
+console.log(getCategoryDiscount("apparel"));
+console.log(getCategoryDiscount("snacks"));
+console.log(getCategoryDiscount("access"));
 
 
 // step 2 
@@ -57,4 +57,18 @@ console.log(getCategoryDiscount("access"))
     return product.price * (1- rate)
  }
 
- console.log()
+ // step 3
+
+ function findProductById (id) {
+    for (let product of products) {
+        if (product.id === id) {
+            return product
+        } else {
+          return null
+        }
+       
+    }
+ };
+
+
+ 
